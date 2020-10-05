@@ -1,5 +1,23 @@
 body {
-	/* background-color: coral; */
+	background-color: #f5efef;
+	font-family: "Roboto Condensed", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: crimson;
+}
+a {
+	color: black;
+}
+a:hover {
+	color: coral;
+}
+a:link {
+	text-decoration: none;
 }
 
 /* carousel start */
@@ -22,6 +40,10 @@ body {
 }
 
 /* carousel end */
+
+/* third part start */
+
+/* third part end */
 
 /* button start */
 
@@ -135,7 +157,7 @@ body {
 }
 .home-newsletter .single h2 {
 	font-size: 22px;
-	color: white;
+	/* color: white; */
 	text-transform: uppercase;
 	margin-bottom: 40px;
 }
