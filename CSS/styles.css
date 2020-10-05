@@ -21,7 +21,6 @@ a:link {
 }
 
 /* carousel start */
-
 .carousel-item {
 	padding: 20px 100px;
 }
@@ -38,7 +37,6 @@ a:link {
 .carousel-control-prev-icon {
 	width: 0;
 }
-
 /* carousel end */
 
 /* third part start */
@@ -46,7 +44,6 @@ a:link {
 /* third part end */
 
 /* button start */
-
 .buy-my-button {
 	background-image: linear-gradient(to bottom, #ff589b 0%, crimson 100%);
 	border: gold;
@@ -54,7 +51,6 @@ a:link {
 	padding: 5px 15px;
 	cursor: pointer;
 }
-
 /* button end */
 
 .size {
@@ -119,7 +115,6 @@ a:link {
 }
 
 /* new arrival start */
-
 .arrival-images img {
 	/* background-color: #f7c5a8; */
 	border: none;
@@ -139,10 +134,9 @@ a:link {
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
-
 /* new arrival end */
 
-/* form */
+/* form start */
 .home-newsletter {
 	padding: 80px 0;
 	/* background: #f84e77; */
@@ -177,7 +171,19 @@ a:link {
 	background: #243c4f;
 	color: #fff;
 }
+/* form end */
 
+/* footer */
 .footer__text {
 	margin: 20px 10px;
 }
+
+/* icon start */
+.fab {
+	margin: 5px;
+	color: #463333;
+}
+.fab:hover {
+	color: tomato;
+}
+/* icon end */
