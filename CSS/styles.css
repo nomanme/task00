@@ -177,3 +177,7 @@ a:link {
 	background: #243c4f;
 	color: #fff;
 }
+
+.footer__text {
+	margin: 20px 10px;
+}
