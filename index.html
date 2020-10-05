@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+
 		<!-- Bootstrap-->
 		<link
 			rel="stylesheet"
@@ -20,6 +20,7 @@
 			integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q"
 			crossorigin="anonymous"
 		/>
+		<title>Spab Rice</title>
 	</head>
 	<body>
 		<header id="header">
@@ -61,66 +62,107 @@
 		</header>
 
 		<main>
-			<section class="nav__section">
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
+			<section>
+				<div class="bs-example">
+					<nav class="navbar navbar-expand-md navbar-light">
+						<button
+							type="button"
+							class="navbar-toggler"
+							data-toggle="collapse"
+							data-target="#navbarCollapse"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
 
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto">
-							<li class="nav-item active">
-								<a class="nav-link" href="#">Home</a>
-							</li>
-							<li class="nav-item active">
-								<a class="nav-link" href="#">Shop</a>
-							</li>
-							<li class="nav-item active">
-								<a class="nav-link" href="#">Journal</a>
-							</li>
-							<li class="nav-item active">
-								<a class="nav-link" href="#">Pages</a>
-							</li>
-							<li class="nav-item active">
-								<a class="nav-link" href="#">Login</a>
-							</li>
-							<li class="nav-item active">
-								<a class="nav-link" href=""><i class="fas fa-search"></i></a>
-							</li>
-							<li class="nav-item active">
-								<a class="nav-link" href=""><i class="far fa-heart"></i></a>
-							</li>
-						</ul>
-					</div>
-				</nav>
+						<div class="collapse navbar-collapse" id="navbarCollapse">
+							<div class="navbar-nav">
+								<a href="#" class="nav-item nav-link active">Home</a>
+								<a href="#" class="nav-item nav-link active">Shop</a>
+								<a href="#" class="nav-item nav-link active">Journal</a>
+								<a href="#" class="nav-item nav-link active">Pages</a>
+							</div>
+							<div class="navbar-nav ml-auto">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">Login</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href=""><i class="fas fa-search"></i></a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href=""><i class="far fa-heart"></i></a>
+								</li>
+							</div>
+						</div>
+					</nav>
+				</div>
 			</section>
 
-			<section class="caroseul__part">
+			<!-- carousel start -->
+
+			<div class="container">
 				<div
-					id="carouselExampleControls"
+					id="carouselExampleIndicators"
 					class="carousel slide"
 					data-ride="carousel"
 				>
+					<ol class="carousel-indicators">
+						<li
+							data-target="#carouselExampleIndicators"
+							data-slide-to="0"
+							class="active"
+						></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
 					<div class="carousel-inner">
-						<div class="carousel-item active photo">
-							<img
-								class="d-block w-50 h-auto"
-								src="images/men.jpg"
-								alt="First slide"
-							/>
+						<div class="carousel-item active">
+							<div class="row align-items-center">
+								<div class="col-md-4">
+									<h1>Winter Collection</h1>
+									<p>
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									</p>
+									<button class="buy-my-button">Buy Now</button>
+								</div>
+								<div class="col-md-8">
+									<img src="images/a1.jpg" class="d-block" alt="..." />
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row align-items-center">
+								<div class="col-md-4">
+									<h1>Summer Collection</h1>
+									<p>
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Tenetur, nemo!
+									</p>
+									<button class="buy-my-button p-10">Buy Now</button>
+								</div>
+								<div class="col-md-8">
+									<img src="images/a2.jpg" class="d-block" alt="..." />
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row align-items-center">
+								<div class="col-md-4">
+									<h1>Special Collection</h1>
+									<p>
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Tenetur, nemo!
+									</p>
+									<button class="buy-my-button">Buy Now</button>
+								</div>
+								<div class="col-md-8">
+									<img src="images/a3.jpg" class="" alt="..." />
+								</div>
+							</div>
 						</div>
 					</div>
 					<a
 						class="carousel-control-prev"
-						href="#carouselExampleControls"
+						href="#carouselExampleIndicators"
 						role="button"
 						data-slide="prev"
 					>
@@ -129,7 +171,7 @@
 					</a>
 					<a
 						class="carousel-control-next"
-						href="#carouselExampleControls"
+						href="#carouselExampleIndicators"
 						role="button"
 						data-slide="next"
 					>
@@ -137,7 +179,9 @@
 						<span class="sr-only">Next</span>
 					</a>
 				</div>
-			</section>
+			</div>
+
+			<!-- carousel end-->
 
 			<section>
 				<div class="container mt-5">
@@ -167,6 +211,55 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- new arrival-->
+			<div class="container new__arrival">
+				<h1 class="text-center gallery">New Arrival</h1>
+
+				<div class="row text-center">
+					<div class="col-lg-3 col-md-4 col-6 arrival-images">
+						<img class="img-fluid img-thumbnail" src="images/c1.jpg" alt="" />
+					</div>
+					<div class="col-lg-3 col-md-4 col-6 arrival-images">
+						<img class="img-fluid img-thumbnail" src="images/c2.jpg" alt="" />
+					</div>
+					<div class="col-lg-3 col-md-4 col-6 arrival-images">
+						<img class="img-fluid img-thumbnail" src="images/c3.jpg" alt="" />
+					</div>
+					<div class="col-lg-3 col-md-4 col-6 arrival-images">
+						<img class="img-fluid img-thumbnail" src="images/c4.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<!-- new arrival end-->
+
+			<!-- form start-->
+
+			<section class="home-newsletter">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="single">
+								<h2>Subscribe to our Newsletter</h2>
+								<div class="input-group">
+									<input
+										type="email"
+										class="form-control"
+										placeholder="Enter your email"
+									/>
+									<span class="input-group-btn">
+										<button class="btn btn-theme" type="submit">
+											Subscribe
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- form end-->
 
 			<section class="last__slider">
 				<footer class="page-footer font-small mdb-color lighten-3 pt-4">
@@ -255,9 +348,90 @@
 					</div>
 				</footer>
 			</section>
-
-			<section class="final__footer"></section>
 		</main>
+
+		<!-- footer start-->
+
+		<footer class="page-footer text-center text-md-left pt-4">
+			<!--Footer Links-->
+			<div class="container-fluid">
+				<div class="row">
+					<hr class="w-100 clearfix d-md-none" />
+
+					<!--Second column-->
+					<div class="col-md-2 mx-auto">
+						<h5 class="text-uppercase font-weight-bold mb-4">About us</h5>
+						<ul class="list-unstyled">
+							<li><a href="#!">Our company</a></li>
+							<li><a href="#!">Our history</a></li>
+							<li><a href="#!">Contact</a></li>
+							<li><a href="#!">Jobs</a></li>
+							<li><a href="#!">Journal</a></li>
+							<li><a href="#!">Store Locations</a></li>
+						</ul>
+					</div>
+					<!--/.Second column-->
+
+					<hr class="w-100 clearfix d-md-none" />
+
+					<!--Third column-->
+					<div class="col-md-2 mx-auto">
+						<h5 class="text-uppercase font-weight-bold mb-4">
+							How can we help
+						</h5>
+						<ul class="list-unstyled">
+							<li><a href="#!">FAQs</a></li>
+							<li><a href="#!">Order tracking</a></li>
+							<li><a href="#!">Terms & Conditions</a></li>
+							<li><a href="#!">Privacy Policy</a></li>
+							<li><a href="#!">Returns & Refunds</a></li>
+							<li><a href="#!">Returns & Refunds</a></li>
+						</ul>
+					</div>
+					<!--/.Third column-->
+
+					<hr class="w-100 clearfix d-md-none" />
+
+					<!--Fourth column-->
+					<div class="col-md-2 mx-auto">
+						<h5 class="text-uppercase font-weight-bold mb-4">Shop</h5>
+						<ul class="list-unstyled">
+							<li><a href="#!">Women</a></li>
+							<li><a href="#!">Men</a></li>
+							<li><a href="#!">Accessories</a></li>
+							<li><a href="#!">Tops</a></li>
+							<li><a href="#!">Jeans</a></li>
+							<li><a href="#!">Shirt</a></li>
+						</ul>
+					</div>
+					<!--/.Fourth column-->
+					<!--First column-->
+					<div class="col-md-3">
+						<h5 class="text-uppercase font-weight-bold mb-4">Footer Content</h5>
+						<a href="#" target="_blank"><i class="fab fa-facebook"> </i></a>
+						<a href="#"><i class="fab fa-twitter"> </i></a>
+						<a href="#"><i class="fab fa-vimeo-square"> </i></a>
+						<a href="#"><i class="fab fa-instagram"> </i></a>
+						<a href="#"> <i class="fab fa-youtube"> </i></a>
+					</div>
+					<!--/.First column-->
+				</div>
+			</div>
+			<!--/.Footer Links-->
+
+			<hr />
+
+			<!--Copyright-->
+			<div class="footer-copyright py-3 text-center">
+				<div class="container-fluid">
+					© 2020 Copyright:
+					<a href="http://www.google.com"> KONA </a>
+				</div>
+			</div>
+			<!--/.Copyright-->
+		</footer>
+
+		<!-- footer end-->
 
 		<!-- JS -->
 

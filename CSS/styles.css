@@ -1,6 +1,39 @@
-.container {
-	background-color: aqua;
+body {
+	/* background-color: coral; */
 }
+
+/* carousel start */
+
+.carousel-item {
+	padding: 20px 100px;
+}
+
+.carousel-indicators li {
+	border: none;
+	width: 25px;
+	border-radius: 15px;
+	height: 10px;
+	background-image: linear-gradient(to right, #ffa132 0%, #ffd019 100%);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	width: 0;
+}
+
+/* carousel end */
+
+/* button start */
+
+.buy-my-button {
+	background-image: linear-gradient(to bottom, #ff589b 0%, crimson 100%);
+	border: gold;
+	border-radius: 5px;
+	padding: 5px 15px;
+	cursor: pointer;
+}
+
+/* button end */
 
 .size {
 	margin-left: 250px;
@@ -10,6 +43,7 @@
 	height: 350px;
 	overflow: hidden;
 }
+
 .inner-div1 {
 	height: 300px;
 	width: 100%;
@@ -22,6 +56,7 @@
 .inner-div1:hover {
 	transform: scale(1.2);
 }
+
 .inner-div2 {
 	height: 300px;
 	width: 100%;
@@ -34,6 +69,7 @@
 .inner-div2:hover {
 	transform: scale(1.2);
 }
+
 .inner-div3 {
 	height: 300px;
 	width: 100%;
@@ -46,10 +82,76 @@
 .inner-div3:hover {
 	transform: scale(1.2);
 }
+
 .zoom-box-text {
 	text-align: center;
 	line-height: 300px;
 }
 .zoom-box-text {
 	color: white;
+}
+
+.null__size {
+	margin: 0 auto;
+	width: 25%;
+}
+
+/* new arrival start */
+
+.arrival-images img {
+	background-color: #f7c5a8;
+	border: none;
+	border-radius: 10px;
+	margin: 10px;
+	box-shadow: 2px 2px 5px #e7305b;
+	cursor: pointer;
+}
+
+.arrival-images :hover {
+	background: #6a197d;
+	text-decoration: none;
+	color: black;
+}
+
+.new__arrival {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* new arrival end */
+
+/* form */
+.home-newsletter {
+	padding: 80px 0;
+	background: #f84e77;
+}
+
+.home-newsletter .single {
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+.home-newsletter .single h2 {
+	font-size: 22px;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+.home-newsletter .single .form-control {
+	height: 50px;
+	background: rgba(255, 255, 255, 0.6);
+	border-color: transparent;
+	border-radius: 20px 0 0 20px;
+}
+.home-newsletter .single .form-control:focus {
+	box-shadow: none;
+	border-color: #243c4f;
+}
+.home-newsletter .single .btn {
+	min-height: 50px;
+	border-radius: 0 20px 20px 0;
+	background: #243c4f;
+	color: #fff;
 }
