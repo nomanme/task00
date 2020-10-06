@@ -187,3 +187,11 @@ a:link {
 	color: tomato;
 }
 /* icon end */
+
+/* header */
+.top__container {
+	margin-left: 50px;
+}
+#header {
+	margin: 10px;
+}
